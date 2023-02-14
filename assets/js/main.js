@@ -16,7 +16,7 @@ addEventListener
 // last  - Element Child anzeigen
 
 
-const btnFirstChild = document.querySelector(".unten")
+const btnFirstChild = document.querySelector("button")
 console.log(btnFirstChild)
 
 const button = document.querySelector("button");
@@ -41,7 +41,7 @@ const outputField = document.querySelector("h1")
 
 
 //  click  
-/* btnFirstChild.addEventListener("click", (e) => {
+btnFirstChild.addEventListener("click", (e) => {
     console.log(e)
     console.log(btnFirstChild)
     console.log(e.target.value)
@@ -50,7 +50,7 @@ const outputField = document.querySelector("h1")
     // function aufrufen
     textHolenFunction___FirstChild(e);
 
-}) */
+}) 
 
 
 // function definieren
@@ -139,12 +139,12 @@ btn2.addEventListener("click", (e) => {
 const btn3 = document.querySelectorAll("button")[2]   // dritte durch 
 console.log(btn3)
 btn3.addEventListener("click", (e) => {
-    outputField.innerHTML = liste.firstElementChild.nextElementSibling.innerHTML
+    outputField.innerHTML = liste.firstElementChild.nextElementSibling.innerHTML  // soll 2te
 });
 
 
 const btn4 = document.querySelectorAll("button")[3]   // vierte durch 
 console.log(btn4)   
 btn4.addEventListener("click", () => {
-    outputField.innerHTML = liste.lastElementChild.previousElementSibling.innerHTML
+    outputField.innerHTML = liste.lastElementChild.previousElementSibling.innerHTML  // soll vorletzte
 });
